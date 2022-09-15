@@ -1,0 +1,14 @@
+<h1>Recetas</h1>
+{% if latest_question_list %}
+    <ul>
+        {% for receta in latest_question_list %}
+            <li>
+                <a href="">
+                    {{receta.titulo}}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay registros</p>
+{% endif %}
